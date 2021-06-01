@@ -1,5 +1,5 @@
-## 获取版本号
+## 帮助信息
 ```
-yarn start:cli -v
+yarn start:cli -h
 
 ```
