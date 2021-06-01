@@ -1,0 +1,22 @@
+{
+  "name": "react-project",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "fuguoqiang1 <fuguoqiang1@100tal.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/react-project.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.xesv5.com/"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}
