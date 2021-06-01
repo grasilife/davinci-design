@@ -1,7 +1,8 @@
-'use strict';
+"use strict";
 
 module.exports = reactCustomCli;
 
 function reactCustomCli() {
-    // TODO
+  // TODO
+  console.log("测试");
 }
