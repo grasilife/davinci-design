@@ -52,20 +52,9 @@ Home.propTypes = {
 const mapState = (state) => ({
   userinfo: state.app.userinfo,
 });
-//为啥这种写法不行啊
-// const mapDispatch = (dispatch) => {
-//   console.log(dispatch.app, "dispatch");
-//   return {
-//     actions: {
-//       getUserinfo: () => dispatch.app.setUserInfo,
-//     },
-//   };
-// };
-
-export default connect(mapState, (dispatch) => {
-  return {
-    actions: {
-      getUserinfo: dispatch.app.getUserinfo,
-    },
-  };
-})(Home);
+const mapDispatch = (dispatch) => ({
+  actions: {
+    getUserinfo: dispatch.app.getUserinfo,
+  },
+});
+export default connect(mapState, mapDispatch)(Home);
