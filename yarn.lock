@@ -2234,6 +2234,35 @@
   resolved "https://registry.npm.taobao.org/@rematch/core/download/@rematch/core-2.0.1.tgz#c69bba9637f41c403c8725834673b12a58a28f31"
   integrity sha1-xpu6ljf0HEA8hyWDRnOxKliijzE=
 
+"@rematch/immer@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.npm.taobao.org/@rematch/immer/download/@rematch/immer-2.0.1.tgz#07f9fee143feea36f8172d7093fe53fe1a254d67"
+  integrity sha1-B/n+4UP+6jb4Fy1wk/5T/holTWc=
+
+"@rematch/loading@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.npm.taobao.org/@rematch/loading/download/@rematch/loading-2.0.1.tgz#0e14ccda22097483cdc62cb6f9af2de5d96b5cd2"
+  integrity sha1-DhTM2iIJdIPNxiy2+a8t5dlrXNI=
+
+"@rematch/persist@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.nlark.com/@rematch/persist/download/@rematch/persist-2.0.1.tgz#94f9cbbe212d769d204b90571c5b261a2fcb77b8"
+  integrity sha1-lPnLviEtdp0gS5BXHFsmGi/Ld7g=
+  dependencies:
+    redux-persist "^6.0.0"
+
+"@rematch/select@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.npm.taobao.org/@rematch/select/download/@rematch/select-3.0.1.tgz#2ca30b5c7e60467a91409c9c1f4ee2a4034a99ca"
+  integrity sha1-LKMLXH5gRnqRQJycH07ipANKmco=
+  dependencies:
+    reselect "^4.0.0"
+
+"@rematch/updated@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.npm.taobao.org/@rematch/updated/download/@rematch/updated-2.0.1.tgz#474b27aed6b5bd7011904e91261deb873c8d37d9"
+  integrity sha1-R0snrta1vXARkE6RJh3rhzyNN9k=
+
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
   resolved "https://registry.npm.taobao.org/@sinonjs/commons/download/@sinonjs/commons-1.8.3.tgz?cache=0&sync_timestamp=1617869033712&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40sinonjs%2Fcommons%2Fdownload%2F%40sinonjs%2Fcommons-1.8.3.tgz#3802ddd21a50a949b6721ddd72da36e67e7f1b2d"
@@ -11042,6 +11071,11 @@ redent@^3.0.0:
     indent-string "^4.0.0"
     strip-indent "^3.0.0"
 
+redux-persist@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.npm.taobao.org/redux-persist/download/redux-persist-6.0.0.tgz#b4d2972f9859597c130d40d4b146fecdab51b3a8"
+  integrity sha1-tNKXL5hZWXwTDUDUsUb+zatRs6g=
+
 redux@^4.0.0:
   version "4.1.0"
   resolved "https://registry.nlark.com/redux/download/redux-4.1.0.tgz?cache=0&sync_timestamp=1619287188632&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fredux%2Fdownload%2Fredux-4.1.0.tgz#eb049679f2f523c379f1aff345c8612f294c88d4"
@@ -11206,6 +11240,11 @@ requires-port@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/requires-port/download/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
+
+reselect@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npm.taobao.org/reselect/download/reselect-4.0.0.tgz#f2529830e5d3d0e021408b246a206ef4ea4437f7"
+  integrity sha1-8lKYMOXT0OAhQIskaiBu9OpEN/c=
 
 resize-observer-polyfill@^1.5.0, resize-observer-polyfill@^1.5.1:
   version "1.5.1"

@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 
 class Home extends React.Component {
   componentDidMount() {
-    console.log(this.props, "this.props");
+    console.log(this.props.actions, "this.props");
     // 获取用户信息测试
     this.props.actions
       .getUserinfo({ id: 1 })
@@ -53,9 +53,26 @@ export default connect(
   (state) => ({
     userinfo: state.app.userinfo, // 引入app model中的userinfo数据
   }),
-  (model) => ({
-    actions: {
-      getUserinfo: model.app.getUserinfo, // 引入app model中的获取用户信息action
-    },
-  })
+  (model) => {
+    console.log(model.app, "model");
+    return {
+      actions: {
+        getUserinfo: model.app.getUserinfo, // 引入app model中的获取用户信息action
+      },
+    };
+  }
 )(Home);
+// const mapState = (state) => ({
+//   userinfo: state.app.userinfo,
+// });
+
+// const mapDispatch = (dispatch) => {
+//   console.log(dispatch.app, "dispatch");
+//   return {
+//     actions: {
+//       getUserinfo: () => dispatch.app.getUserinfo,
+//     },
+//   };
+// };
+
+// export default connect(mapState, mapDispatch)(Home);
