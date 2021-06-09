@@ -17,11 +17,8 @@ module.exports = {
 
     config.plugins.push(
       new ModuleFederationPlugin({
-        name: "app-base",
+        name: "appBase",
         filename: "remoteEntry.js",
-        remotes: {
-          app1: `app1@${url}remoteEntry.js`,
-        },
         exposes: {
           "./Button": "./src/Button",
         },
