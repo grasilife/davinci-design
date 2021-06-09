@@ -1,5 +1,5 @@
 import React from "react";
-import "./Button.less";
+import "./index.less";
 const style = {
   background: "#00c",
   color: "#fff",
