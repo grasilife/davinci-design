@@ -1,23 +1,16 @@
-// const { ModuleFederationPlugin } = require("webpack").container;
-
+const path = require("path");
 module.exports = {
   plugins: ["less", "bundle-analyzer", "eslint"],
   options: {
     verbose: true,
     buildType: "spa",
   },
-  //   modifyWebpackConfig(opts) {
-  //     const config = opts.webpackConfig;
+  modifyWebpackConfig(opts) {
+    const config = opts.webpackConfig;
+    config.resolve.alias = {
+      "@": path.resolve(__dirname, "src"),
+    };
 
-  //     config.plugins.push(
-  //       new ModuleFederationPlugin({
-  //         name: "react-app",
-  //         filename: "remoteEntry.js",
-  //         exposes: {},
-  //         shared: [],
-  //       })
-  //     );
-
-  //     return config;
-  //   },
+    return config;
+  },
 };
