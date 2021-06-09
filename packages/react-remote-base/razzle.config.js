@@ -5,6 +5,7 @@ const path = require("path");
 const deps = require("./package.json").dependencies;
 
 module.exports = {
+  plugins: ["less", "bundle-analyzer"],
   options: {
     buildType: "spa",
   },

@@ -1,7 +1,8 @@
 {
   "client": {
     "js": [
-      "http://localhost:4000/static/js/client.js"
+      "http://localhost:4000/static/js/client.js",
+      "http://localhost:4000/client.75a471fc0276de200321.hot-update.js"
     ],
     "chunks": [
       "client"

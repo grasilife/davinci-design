@@ -3,6 +3,7 @@
 const { ModuleFederationPlugin } = require("webpack").container;
 
 module.exports = {
+  plugins: ["less", "bundle-analyzer"],
   options: {
     buildType: "spa",
   },
