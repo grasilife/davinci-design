@@ -1,24 +1,30 @@
 {
-  "client": {
+  "468": {
     "js": [
-      "http://localhost:4000/static/js/client.js",
-      "http://localhost:4000/client.75a471fc0276de200321.hot-update.js"
+      "/static/js/468.88f6dc36.chunk.js"
     ],
     "chunks": [
-      "client"
+      468
     ]
   },
-  "src_bootstrap_js": {
+  "client": {
     "js": [
-      "http://localhost:4000/static/js/src_bootstrap_js.chunk.js"
+      "/static/js/client.26dafdf3.js"
     ],
     "chunks": [
-      "src_bootstrap_js"
+      47
     ]
   },
   "noentry": {
+    "ico": [
+      "/favicon.ico"
+    ],
+    "txt": [
+      "/static/js/468.88f6dc36.chunk.js.LICENSE.txt",
+      "/robots.txt"
+    ],
     "html": [
-      "http://localhost:4000/index.html"
+      "/index.html"
     ]
   }
 }
