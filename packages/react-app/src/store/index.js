@@ -1,5 +1,5 @@
 import { init } from "@rematch/core";
-import app from "@/models/app";
+import { app } from "@/models/app";
 import loadingPlugin from "@rematch/loading";
 import selectPlugin from "@rematch/select";
 import immerPlugin from "@rematch/immer";
