@@ -1,13 +1,12 @@
-import LocalButton from "./Button";
 import React from "react";
+import { Route, Switch } from "react-router-dom";
+import Home from "./Home";
+import "./App.less";
 
 const App = () => (
-  <div>
-    <h1>Bi-Directional</h1>
-    <h2>App Base</h2>
-    <LocalButton />
-    <React.Suspense fallback="Loading Button"></React.Suspense>
-  </div>
+  <Switch>
+    <Route exact path="/" component={Home} />
+  </Switch>
 );
 
 export default App;
