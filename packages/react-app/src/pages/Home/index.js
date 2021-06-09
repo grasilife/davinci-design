@@ -49,30 +49,23 @@ class Home extends React.Component {
 Home.propTypes = {
   actions: PropTypes.object, // 上面model中定义的actions对象，自动成为this.props.actions变量
 };
-export default connect(
-  (state) => ({
-    userinfo: state.app.userinfo, // 引入app model中的userinfo数据
-  }),
-  (model) => {
-    console.log(model.app, "model");
-    return {
-      actions: {
-        getUserinfo: model.app.getUserinfo, // 引入app model中的获取用户信息action
-      },
-    };
-  }
-)(Home);
-// const mapState = (state) => ({
-//   userinfo: state.app.userinfo,
-// });
-
+const mapState = (state) => ({
+  userinfo: state.app.userinfo,
+});
+//为啥这种写法不行啊
 // const mapDispatch = (dispatch) => {
 //   console.log(dispatch.app, "dispatch");
 //   return {
 //     actions: {
-//       getUserinfo: () => dispatch.app.getUserinfo,
+//       getUserinfo: () => dispatch.app.setUserInfo,
 //     },
 //   };
 // };
 
-// export default connect(mapState, mapDispatch)(Home);
+export default connect(mapState, (dispatch) => {
+  return {
+    actions: {
+      getUserinfo: dispatch.app.getUserinfo,
+    },
+  };
+})(Home);
