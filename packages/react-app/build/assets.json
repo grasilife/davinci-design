@@ -1,0 +1,23 @@
+{
+  "client": {
+    "js": [
+      "http://localhost:4000/static/js/client.js"
+    ],
+    "chunks": [
+      "client"
+    ]
+  },
+  "src_bootstrap_js": {
+    "js": [
+      "http://localhost:4000/static/js/src_bootstrap_js.chunk.js"
+    ],
+    "chunks": [
+      "src_bootstrap_js"
+    ]
+  },
+  "noentry": {
+    "html": [
+      "http://localhost:4000/index.html"
+    ]
+  }
+}

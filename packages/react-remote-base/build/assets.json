@@ -1,8 +1,7 @@
 {
   "client": {
     "js": [
-      "http://localhost:3000/static/js/client.js",
-      "http://localhost:3000/client.6ab531f0579337cc3672.hot-update.js"
+      "http://localhost:3000/static/js/client.js"
     ],
     "chunks": [
       "client"
@@ -10,8 +9,7 @@
   },
   "appBase": {
     "js": [
-      "http://localhost:3000/remoteEntry.js",
-      "http://localhost:3000/appBase.6ab531f0579337cc3672.hot-update.js"
+      "http://localhost:3000/remoteEntry.js"
     ],
     "chunks": [
       "appBase"
@@ -19,8 +17,7 @@
   },
   "src_bootstrap_js": {
     "js": [
-      "http://localhost:3000/static/js/src_bootstrap_js.chunk.js",
-      "http://localhost:3000/src_bootstrap_js.6ab531f0579337cc3672.hot-update.js"
+      "http://localhost:3000/static/js/src_bootstrap_js.chunk.js"
     ],
     "chunks": [
       "src_bootstrap_js"
@@ -44,8 +41,7 @@
   },
   "src_Button_js": {
     "js": [
-      "http://localhost:3000/static/js/src_Button_js.chunk.js",
-      "http://localhost:3000/src_Button_js.6ab531f0579337cc3672.hot-update.js"
+      "http://localhost:3000/static/js/src_Button_js.chunk.js"
     ],
     "chunks": [
       "src_Button_js"
