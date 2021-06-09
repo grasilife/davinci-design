@@ -1,7 +1,8 @@
 {
   "client": {
     "js": [
-      "http://localhost:3001/static/js/client.js"
+      "http://localhost:3001/static/js/client.js",
+      "http://localhost:3001/client.cd40c88602f56a5b85e7.hot-update.js"
     ],
     "chunks": [
       "client"
@@ -9,7 +10,8 @@
   },
   "app1": {
     "js": [
-      "http://localhost:3001/remoteEntry.js"
+      "http://localhost:3001/remoteEntry.js",
+      "http://localhost:3001/app1.cd40c88602f56a5b85e7.hot-update.js"
     ],
     "chunks": [
       "app1"

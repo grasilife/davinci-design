@@ -1,10 +1,9 @@
-"use strict";
-
 // const { ModuleFederationPlugin } = require("webpack").container;
 
 module.exports = {
-  plugins: ["less", "bundle-analyzer"],
+  plugins: ["less", "bundle-analyzer", "eslint"],
   options: {
+    verbose: true,
     buildType: "spa",
   },
   //   modifyWebpackConfig(opts) {
