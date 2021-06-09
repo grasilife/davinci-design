@@ -1,8 +1,25 @@
 import React from "react";
-import logo from "../../assets/react.svg";
+import logo from "@/assets/react.svg";
 import "./index.less";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
 
 class Home extends React.Component {
+  componentDidMount() {
+    console.log(this.props, "this.props");
+    // 获取用户信息测试
+    this.props.actions
+      .getUserinfo({ id: 1 })
+      .then((res) => {
+        console.log("获取用户信息测试：", res);
+      })
+      .catch(() => {
+        console.log("Promise catch");
+      })
+      .finally(() => {
+        console.log("Promise finally");
+      });
+  }
   render() {
     return (
       <div className="Home">
@@ -29,5 +46,16 @@ class Home extends React.Component {
     );
   }
 }
-
-export default Home;
+Home.propTypes = {
+  actions: PropTypes.object, // 上面model中定义的actions对象，自动成为this.props.actions变量
+};
+export default connect(
+  (state) => ({
+    userinfo: state.app.userinfo, // 引入app model中的userinfo数据
+  }),
+  (model) => ({
+    actions: {
+      getUserinfo: model.app.getUserinfo, // 引入app model中的获取用户信息action
+    },
+  })
+)(Home);

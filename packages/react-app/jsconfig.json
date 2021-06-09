@@ -5,7 +5,10 @@
     "paths": {
       "@/*": ["./src/*"]
     },
+    "baseUrl": "src",
     "allowSyntheticDefaultImports": true
   },
+
+  "include": ["src"],
   "exclude": ["node_modules"]
 }

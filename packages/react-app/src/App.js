@@ -1,12 +1,15 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
-import Home from "@/pages/Home/index";
 import "./App.less";
-
-const App = () => (
-  <Switch>
-    <Route exact path="/" component={Home} />
-  </Switch>
-);
+import Routers from "@/routers/index";
+import { Provider } from "react-redux";
+import store from "@/store";
+console.log(store, "store");
+const App = () => {
+  return (
+    <Provider store={store}>
+      <Routers />
+    </Provider>
+  );
+};
 
 export default App;
