@@ -16,6 +16,7 @@ module.exports = {
         library: { type: "var", name: "libs" },
         exposes: {
           "./antd": "./src/antd",
+          "./moment": "./src/moment",
           "./Button": "./src/Button",
         },
         shared: [

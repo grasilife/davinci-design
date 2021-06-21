@@ -6,6 +6,9 @@ import PropTypes from "prop-types";
 // const { Button } = React.lazy(() => import("libs/antd"));
 // import antd from "libs/antd";
 import RemoteButton from "libs/Button";
+import moment from "libs/moment";
+let time = moment().format("dddd");
+console.log(time, "time");
 // console.log(antd, "antd");
 class Home extends React.Component {
   componentDidMount() {
