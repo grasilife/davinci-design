@@ -9,18 +9,13 @@ module.exports = {
   modifyWebpackConfig(opts) {
     const config = opts.webpackConfig;
 
-    const url = opts.env.dev
-      ? process.env.FEDERATED_URL_DEV
-      : process.env.FEDERATED_URL;
-
     config.plugins.push(
       new ModuleFederationPlugin({
-        name: "app1",
+        name: "libs",
         filename: "remoteEntry.js",
-        remotes: {
-          appBase: `appBase@${url}remoteEntry.js`,
-        },
+        library: { type: "var", name: "libs" },
         exposes: {
+          "./antd": "./src/antd",
           "./Button": "./src/Button",
         },
         shared: [

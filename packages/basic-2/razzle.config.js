@@ -1,7 +1,4 @@
-"use strict";
-
 const { ModuleFederationPlugin } = require("webpack").container;
-const path = require("path");
 const deps = require("./package.json").dependencies;
 
 module.exports = {

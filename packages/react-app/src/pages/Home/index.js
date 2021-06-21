@@ -3,7 +3,10 @@ import logo from "@/assets/react.svg";
 import "./index.less";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-
+// const antd = React.lazy(() => import("libs/antd"));
+import antd from "libs/antd";
+// import RemoteButton from "libs/Button";
+console.log(antd, "antd");
 class Home extends React.Component {
   componentDidMount() {
     console.log(this.props.actions, "this.props");
@@ -26,6 +29,8 @@ class Home extends React.Component {
         <div className="Home-header">
           <img src={logo} className="Home-logo" alt="logo" />
           <h2>Welcome to Razzle</h2>
+          {/* <RemoteButton /> */}
+          <antd.Button type="primary">Primary Button</antd.Button>
         </div>
         <p className="Home-intro">
           To get started, edit <code>src/App.js</code> or{" "}
